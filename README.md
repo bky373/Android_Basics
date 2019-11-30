@@ -1,2 +1,2 @@
-# Android_Basics
-안드로이드 기초 공부하기
+# Android_MyFirstApp
+안드로이드 첫 번째 어플 만들기
