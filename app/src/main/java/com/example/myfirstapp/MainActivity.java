@@ -49,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             Toast.makeText(this, "Activity touch", Toast.LENGTH_SHORT).show();
         }
-        // TODO 내일은 꼭 올리자
+        // TODO 내일 2019년 12월 19일에는 꼭 올리자
+        // TODO 왜 오늘 안올렸니ㅠㅠㅠ 2019년 12월 20일 내일 꼭 올리자!
         return false;
     }
 }
