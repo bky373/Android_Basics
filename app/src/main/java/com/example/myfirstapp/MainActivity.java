@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.b1:
-                    Toast.makeText(getApplicationContext(),
+                    Toast.makeText(MainActivity.this,
                             "구웃!!!!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.b2:
@@ -47,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     };
+
+    public void showCapital(View view) {
+        Toast.makeText(MainActivity.this,"서울", Toast.LENGTH_SHORT).show();
+    }
 //    class MyView extends View {
 //        MyView(Context context) {
 //            super(context);
