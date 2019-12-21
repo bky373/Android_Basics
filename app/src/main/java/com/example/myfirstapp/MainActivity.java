@@ -9,37 +9,44 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
-    Button b1;
-    Button b2;
+    Button[] mButtons = new Button[4];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 //        MyView myView = new MyView(this);
-        MyListener mL = new MyListener(); // 이벤트 리스너 객체 생성하기
 
-        b1 = findViewById(R.id.b1);
-        b2 = findViewById(R.id.b2);
-
-        b1.setOnClickListener(mL); // 위젯에 이벤트 리스너 객체 등록하기
-        b2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "나이스 !!!!!", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-    }
-
-    // 인터페이스 OnClickListener를 구현한 클래스를 만든다.
-    // onClick 메소드를 구현해준다.
-    class MyListener implements View.OnClickListener {
-
-        public void onClick(View v) {
-            Toast.makeText(MainActivity.this, "리스너 객체를 사용한 이벤트 처리", Toast.LENGTH_SHORT).show();
+        for (int i = 0; i < 4; i++) {
+            mButtons[i] = findViewById(R.id.b1 + i);
+            mButtons[i].setOnClickListener(myClick); // 위젯에 이벤트 리스너 객체 등록하기
         }
     }
+
+    // 무명 클래스를 사용해서 리스너 인터페이스를 구현함
+    View.OnClickListener myClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()) {
+                case R.id.b1:
+                    Toast.makeText(getApplicationContext(),
+                            "구웃!!!!", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.b2:
+                    Toast.makeText(getApplicationContext(),
+                            "사랑은 사랑을 낳는다.", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.b3:
+                    Toast.makeText(getApplicationContext(),
+                            "자만은 추락을 가지게 된다.", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.b4:
+                    Toast.makeText(getApplicationContext(),
+                            "일찍 일어나는 새가 벌레를 잡는다.", Toast.LENGTH_SHORT).show();
+                    break;
+            }
+        }
+    };
 //    class MyView extends View {
 //        MyView(Context context) {
 //            super(context);
@@ -56,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
 
-    /**
-     * Called when the user taps the Send button
-     */
+/**
+ * Called when the user taps the Send button
+ */
 //    public void sendMessage(View view) {
 //        Intent intent = new Intent(this, DisplayMessageActivity.class);
 //        EditText editText = findViewById(R.id.editText);
@@ -74,6 +81,5 @@ public class MainActivity extends AppCompatActivity {
 //        return false;
 //    }
 }
-
 
 

@@ -33,15 +33,34 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:background="#70EE7AD4"
-        android:padding="20dp"
-        android:text="Niceeeeeeee!"
-        android:textSize="30sp"
-        android:layout_marginTop="30dp"/>
+        android:padding="15dp"
+        android:text="LOVE BEGETS LOVE"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="#70EE7AD4"
+        android:padding="15dp"
+        android:text="PRIDE WILL HAVE A FALL"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="#70EE7AD4"
+        android:padding="14dp"
+        android:text="THE EARLY BIRD CATCHES THE WORM"
+        android:textSize="19sp"
+        android:layout_marginTop="20dp"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
         android:padding="20dp"
         android:src="@drawable/brothers" />
 
