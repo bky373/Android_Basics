@@ -18,19 +18,20 @@
         android:textSize="30sp" />
 
     <Button
+        android:id="@+id/b1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
+        android:background="#7018A892"
         android:padding="20dp"
         android:text="Goooood!"
-        android:textSize="30sp"
-        android:background="#7018A892"/>
+        android:textSize="30sp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/brothers"
+        android:layout_marginTop="200dp"
         android:padding="20dp"
-        android:layout_marginTop="200dp"/>
+        android:src="@drawable/brothers" />
 
 </LinearLayout>
