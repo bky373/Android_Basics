@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
     Button b1;
+    Button b2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +20,22 @@ public class MainActivity extends AppCompatActivity {
         MyListener mL = new MyListener(); // 이벤트 리스너 객체 생성하기
 
         b1 = findViewById(R.id.b1);
+        b2 = findViewById(R.id.b2);
+
         b1.setOnClickListener(mL); // 위젯에 이벤트 리스너 객체 등록하기
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "나이스 !!!!!", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 
     // 인터페이스 OnClickListener를 구현한 클래스를 만든다.
     // onClick 메소드를 구현해준다.
     class MyListener implements View.OnClickListener {
-        
+
         public void onClick(View v) {
             Toast.makeText(MainActivity.this, "리스너 객체를 사용한 이벤트 처리", Toast.LENGTH_SHORT).show();
         }
