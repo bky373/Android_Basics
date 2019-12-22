@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void showCapital(View view) {
         Toast.makeText(MainActivity.this,"서울", Toast.LENGTH_SHORT).show();
+        // TODO 191222 해야할 일들을 미루지 말자.
     }
 //    class MyView extends View {
 //        MyView(Context context) {
