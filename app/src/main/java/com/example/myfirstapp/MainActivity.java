@@ -1,5 +1,6 @@
 package com.example.myfirstapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
                             "사랑은 사랑을 낳는다.", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.b3:
-                    Toast.makeText(getApplicationContext(),
-                            "자만은 추락을 가지게 된다.", Toast.LENGTH_SHORT).show();
+                    Intent intent1 = new Intent(getApplicationContext(), ShowJames.class);
+                    startActivity(intent1);
                     break;
                 case R.id.b4:
-                    Toast.makeText(getApplicationContext(),
-                            "일찍 일어나는 새가 벌레를 잡는다.", Toast.LENGTH_SHORT).show();
+                    Intent intent2 = new Intent(getApplicationContext(), ShowSophia.class);
+                    startActivity(intent2);
                     break;
             }
         }
@@ -50,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void showCapital(View view) {
         Toast.makeText(MainActivity.this,"서울", Toast.LENGTH_SHORT).show();
-        // TODO 191222 해야할 일들을 미루지 말자.
     }
 //    class MyView extends View {
 //        MyView(Context context) {

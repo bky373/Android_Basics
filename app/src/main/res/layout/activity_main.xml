@@ -17,15 +17,6 @@
         android:textColor="#000000"
         android:textSize="30sp" />
 
-    <Button
-        android:id="@+id/b1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:background="#7018A892"
-        android:padding="15dp"
-        android:text="Goooood!"
-        android:textSize="20sp" />
 
     <Button
         android:id="@+id/b1"
@@ -34,7 +25,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
         android:background="#70D1BA1E"
-        android:padding="15dp"
+        android:padding="10dp"
         android:text="한국의 수도는?!"
         android:textSize="20sp"
         android:onClick="showCapital"/>
@@ -44,33 +35,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:background="#70EE7AD4"
-        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        android:background="#91BB93"
+        android:padding="10dp"
         android:text="LOVE BEGETS LOVE"
         android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-----  아래 두 버튼은 Intent 학습하기 -----"
+        android:textColor="#070707"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"/>
 
     <Button
         android:id="@+id/b3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:background="#70EE7AD4"
-        android:padding="15dp"
-        android:text="PRIDE WILL HAVE A FALL"
-        android:textSize="20sp" />
+        android:layout_marginTop="10dp"
+        android:background="#B8BDD5"
+        android:padding="5dp"
+        android:text="James"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        d/>
 
     <Button
         android:id="@+id/b4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="#70EE7AD4"
-        android:padding="14dp"
-        android:text="THE EARLY BIRD CATCHES THE WORM"
-        android:textSize="19sp" />
+        android:padding="5dp"
+        android:text="Sophia"
+        android:textSize="19sp"
+        android:layout_gravity="center"/>
 
     <ImageView
         android:layout_width="wrap_content"
