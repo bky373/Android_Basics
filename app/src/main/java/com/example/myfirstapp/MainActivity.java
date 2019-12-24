@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             switch (v.getId()) {
                 case R.id.b1:
                     Toast.makeText(MainActivity.this,
-                            "구웃!!!!", Toast.LENGTH_SHORT).show();
+                            "서울!!!!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.b2:
                     Toast.makeText(getApplicationContext(),

@@ -23,6 +23,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+
+        <activity
+            android:name=".ShowJames"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".ShowSophia"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
