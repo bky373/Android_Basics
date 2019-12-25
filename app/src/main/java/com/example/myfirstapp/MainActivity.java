@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
-    Button[] mButtons = new Button[4];
+    Button[] mButtons = new Button[5];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 //        MyView myView = new MyView(this);
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < mButtons.length; i++) {
             mButtons[i] = findViewById(R.id.b1 + i);
             mButtons[i].setOnClickListener(myClick); // 위젯에 이벤트 리스너 객체 등록하기
         }
@@ -44,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.b4:
                     Intent intent2 = new Intent(getApplicationContext(), ShowSophia.class);
                     startActivity(intent2);
+                    break;
+                case R.id.b5:
+                    Intent intent3 = new Intent(getApplicationContext(), ShowMyAlbum.class);
+                    startActivity(intent3);
                     break;
             }
         }

@@ -31,6 +31,11 @@
         <activity
             android:name=".ShowSophia"
             android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".ShowMyAlbum"
+            android:screenOrientation="portrait"></activity>
+
     </application>
 
 </manifest>
