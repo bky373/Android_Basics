@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
-    Button[] mButtons = new Button[5];
+    Button[] mButtons = new Button[6];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +49,11 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent3 = new Intent(getApplicationContext(), ShowMyAlbum.class);
                     startActivity(intent3);
                     break;
+                case R.id.b6:
+                    Intent intent4 = new Intent(getApplicationContext(), ShowDrawingLots.class);
+                    startActivity(intent4);
+                    break;
+
             }
         }
     };
