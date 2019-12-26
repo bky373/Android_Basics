@@ -1,6 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="주사위 개수를 선택하세요!"
+        android:textSize="27sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_dice_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_dice_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주사위 1개"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/radio_dice_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주사위 2개"
+            android:checked="true"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_dice_roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주사위 던지기"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/dice_image_1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/dice3" />
+
+        <ImageView
+            android:id="@+id/dice_image_2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/dice5" />
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -36,7 +36,9 @@
             android:name=".ShowMyAlbum"
             android:screenOrientation="portrait"></activity>
 
-        <activity android:name=".ShowDrawingLots" ></activity>
+        <activity android:name=".ShowDrawingLots"></activity>
+
+        <activity android:name=".ShowDiceApp"></activity>
     </application>
 
 </manifest>
