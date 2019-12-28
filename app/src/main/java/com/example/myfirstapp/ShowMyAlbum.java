@@ -24,28 +24,28 @@ public class ShowMyAlbum extends AppCompatActivity {
                 public void onClick(View v) {
                     switch (v.getId()) {
                         case R.id.button_1:
-                            mImageView.setImageResource(R.drawable.baby1);
+                            mImageView.setImageResource(R.drawable.photo1);
                             mButtons[0].setAlpha(1.0f);
                             mButtons[1].setAlpha(0.3f);
                             mButtons[2].setAlpha(0.3f);
                             mButtons[3].setAlpha(0.3f);
                             break;
                         case R.id.button_2:
-                            mImageView.setImageResource(R.drawable.baby2);
+                            mImageView.setImageResource(R.drawable.photo2);
                             mButtons[1].setAlpha(1.0f);
                             mButtons[0].setAlpha(0.3f);
                             mButtons[2].setAlpha(0.3f);
                             mButtons[3].setAlpha(0.3f);
                             break;
                         case R.id.button_3:
-                            mImageView.setImageResource(R.drawable.plants);
+                            mImageView.setImageResource(R.drawable.photo3);
                             mButtons[2].setAlpha(1.0f);
                             mButtons[0].setAlpha(0.3f);
                             mButtons[1].setAlpha(0.3f);
                             mButtons[3].setAlpha(0.3f);
                             break;
                         case R.id.button_4:
-                            mImageView.setImageResource(R.drawable.ladybugs);
+                            mImageView.setImageResource(R.drawable.photo4);
                             mButtons[3].setAlpha(1.0f);
                             mButtons[0].setAlpha(0.3f);
                             mButtons[1].setAlpha(0.3f);
